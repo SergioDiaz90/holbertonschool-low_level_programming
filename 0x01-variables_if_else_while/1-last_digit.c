@@ -4,7 +4,7 @@
 /**
 * main - function of context
 *
-* Return: Number that meet of condition.
+* Return: the last number of number in n.
 */
 int main(void)
 {
@@ -15,6 +15,6 @@ if ((n % 10) > 5)
 printf("Last digit of %d is %d and is greater than 5", n, n % 10);
 else if ((n % 10)  == 0)
 printf("the last digit %d is %d the string and is 0", n, n % 10);
-else if ((n % 10) < 6)
+else
 printf("the last digit %d is %d and is less than 6 and not 0", n, n % 10);
 }
