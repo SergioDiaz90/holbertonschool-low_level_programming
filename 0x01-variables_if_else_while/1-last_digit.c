@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main -
+* main - function of context
 *
-* Return: Always 0 (Success)
+* Return: Number that meet of condition.
 */
 int main(void)
 {
