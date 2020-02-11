@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-* main - Print the alphabet in lowercase of the 'a' to the 'z'.
-*
-* Return: Always 0.
-*/
+ * print_alphabet - check the code for Holberton School students.
+ *
+ * Return: print the alphabet in lowercase.
+ */
 void print_alphabet(void)
 {
 	int x;
