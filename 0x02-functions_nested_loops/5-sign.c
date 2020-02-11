@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_sing - check the code for Holberton School students.
+ * print_sign - check the code for Holberton School students.
  * @n: Variable initial of the function.
- * Return: print in number if character is lowercase or not.
+ * Return: print in characters and return numbers.
  */
 int print_sign(int n)
 {
