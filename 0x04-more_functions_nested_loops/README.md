@@ -1,0 +1,1 @@
+This project is an form the review the concepts, leared about functions and loops
