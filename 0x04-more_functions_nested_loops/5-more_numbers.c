@@ -13,9 +13,9 @@ void more_numbers(void)
 
 	for (line = 0; line <= 10; line++)
 	{
-		for (i = 0 ; i < 15 ; i++)
+		for (i = 0 ; i <= 14 ; i++)
 		{
-			if (i > 9)
+			if (i >= 10)
 			{
 				_putchar((i / 10) + '0');
 			}
