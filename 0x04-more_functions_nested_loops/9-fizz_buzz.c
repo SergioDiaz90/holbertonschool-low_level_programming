@@ -8,7 +8,7 @@ int main(void)
 {
 	int numberCount;
 
-	for (numberCount = 1; numberCount < 101; numberCount++)
+	for (numberCount = 1; numberCount <= 100; numberCount++)
 	{
 		int three = numberCount % 3;
 		int five = numberCount % 5;
