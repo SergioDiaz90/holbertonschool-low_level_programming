@@ -10,34 +10,25 @@ int main(void)
 
 	for (numberCount = 1; numberCount <= 100; numberCount++)
 	{
-		int three = numberCount % 3;
-		int five = numberCount % 5;
-
-		if ((three == 0) && (five == 0))
+		if (numberCount % 3 == 0 && numberCount % 5 == 0)
 		{
 			printf("FizzBuzz");
 			putchar(' ');
 		}
+		else if (numberCount % 5 == 0)
+		{
+			printf("Buzz");
+			putchar(' ');
+		}
+		else if (numberCount % 3 == 0)
+		{
+			printf("Fizz");
+			putchar(' ');
+		}
 		else
 		{
-			if (five == 0)
-			{
-				printf("Buzz");
-				putchar(' ');
-			}
-			else
-			{
-				if (three == 0)
-				{
-					printf("Fizz");
-					putchar(' ');
-				}
-				else
-				{
-					printf("%d", numberCount);
-					putchar(' ');
-				}
-			}
+			printf("%d", numberCount);
+			putchar(' ');
 		}
 	}
 	putchar('\n');
