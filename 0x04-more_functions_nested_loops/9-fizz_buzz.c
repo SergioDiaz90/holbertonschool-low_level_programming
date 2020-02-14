@@ -6,28 +6,28 @@
  */
 int main(void)
 {
-	int numberCount;
+	int i;
 
-	for (numberCount = 1; numberCount <= 100; numberCount++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (numberCount % 3 == 0 && numberCount % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 			putchar(' ');
 		}
-		else if (numberCount % 5 == 0)
+		else if (i % 5 == 0)
 		{
 			printf("Buzz");
 			putchar(' ');
 		}
-		else if (numberCount % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("Fizz");
 			putchar(' ');
 		}
 		else
 		{
-			printf("%d", numberCount);
+			printf("%d", i);
 			putchar(' ');
 		}
 	}
