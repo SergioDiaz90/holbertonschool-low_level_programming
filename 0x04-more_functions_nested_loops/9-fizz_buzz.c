@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
 /**
  * main - print solution FizzBuzz.
  * numberCount: variable initial of the function.
