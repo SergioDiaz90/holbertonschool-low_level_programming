@@ -6,36 +6,38 @@
  */
 int main(void)
 {
-	/* @i:  iterator from 1 to 100 */
-	int i;
+	int numberCount;
 
-	for (i = 1; i <= 100; i++)
+	for (numberCount = 1; numberCount <= 100; numberCount++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		int three = numberCount % 3;
+		int five = numberCount % 5;
+
+		if ((three == 0) && (five == 0))
 		{
 			printf("FizzBuzz");
+			putchar(' ');
 		}
 		else
 		{
-			if (i % 3 == 0)
+			if (five == 0)
 			{
-				printf("Fizz");
+				printf("Buzz");
+				putchar(' ');
 			}
 			else
 			{
-				if (i % 5 == 0)
+				if (three == 0)
 				{
-					printf("Buzz");
+					printf("Fizz");
+					putchar(' ');
 				}
 				else
 				{
-					printf("%d", i);
+					printf("%d", numberCount);
+					putchar(' ');
 				}
 			}
-		}
-		if (i != 100)
-		{
-			printf(" ");
 		}
 	}
 	putchar('\n');
