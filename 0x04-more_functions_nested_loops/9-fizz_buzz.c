@@ -10,20 +10,20 @@ int main(void)
 
 	for (numberCount = 1; numberCount <= 100; numberCount++)
 	{
-		int three = numberCount % 3 == 0;
-		int five = numberCount % 5 == 0;
+		int three = numberCount % 3;
+		int five = numberCount % 5;
 
-		if (three && five)
+		if ((three == 0) && (five == 0))
 		{
 			printf("FizzBuzz");
 			putchar(32);
 		}
-		else if (five)
+		else if (five == 0)
 		{
 			printf("Buzz");
 			putchar(32);
 		}
-		else if (three)
+		else if (three == 0)
 		{
 			printf("Fizz");
 			putchar(32);
