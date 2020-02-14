@@ -8,7 +8,7 @@ int main(void)
 {
 	int numberCount;
 
-	for (numberCount = 1; numberCount <= 100; numberCount++)
+	for (numberCount = 1; numberCount < 101; numberCount++)
 	{
 		int three = numberCount % 3;
 		int five = numberCount % 5;
@@ -16,22 +16,22 @@ int main(void)
 		if ((three == 0) && (five == 0))
 		{
 			printf("FizzBuzz");
-			putchar(32);
+			putchar(' ');
 		}
 		else if (five == 0)
 		{
 			printf("Buzz");
-			putchar(32);
+			putchar(' ');
 		}
 		else if (three == 0)
 		{
 			printf("Fizz");
-			putchar(32);
+			putchar(' ');
 		}
 		else
 		{
 			printf("%d", numberCount);
-			putchar(32);
+			putchar(' ');
 		}
 	}
 	putchar('\n');
