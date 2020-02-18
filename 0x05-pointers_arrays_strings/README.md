@@ -1,0 +1,1 @@
+This project is realiced with the final propouse learn pointer and arrays.
