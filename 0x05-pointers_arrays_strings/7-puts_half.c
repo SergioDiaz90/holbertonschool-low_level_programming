@@ -7,21 +7,33 @@
  */
 void puts_half(char *str)
 {
-	int i;
-	int x;
-	int aux;
+	int i, x, aux;
 
 	for (i = 0; *(str + i) != '\0'; i++)
 	{
 
 	}
 
-	x = i / 2;
-
-	for (x = x; x < i ; x++)
+	if (i % 2 == 0)
 	{
-		aux = *(str + x);
-		_putchar (aux);
+		x = i / 2;
+
+		for (x = x; x < i ; x++)
+		{
+			aux = *(str + x);
+			_putchar (aux);
+		}
+	}
+	else if (i % 2 != 0)
+	{
+		x = (i - 1) / 2;
+
+		for (x = x; x < i ; x++)
+		{
+			aux = *(str + x);
+			_putchar (aux);
+		}
 	}
 	_putchar('\n');
+
 }
