@@ -14,25 +14,20 @@ void puts_half(char *str)
 
 	}
 
-	if (i % 2 == 0)
-	{
-		x = i / 2;
-
-		for (x = x; x < i ; x++)
-		{
-			aux = *(str + x);
-			_putchar (aux);
-		}
-	}
-	else if (i % 2 != 0)
+	if (i % 2 != 0)
 	{
 		x = (i - 1) / 2;
+	}
 
-		for (x = x; x < i ; x++)
-		{
-			aux = *(str + x);
-			_putchar (aux);
-		}
+	else
+	{
+		x = i / 2;
+	}
+
+	for (x = x; x < i ; x++)
+	{
+		aux = *(str + x);
+		_putchar (aux);
 	}
 	_putchar('\n');
 
