@@ -12,7 +12,7 @@ char *string_toupper(char *i)
 
 	for (count = 0; i[count] != '\0'; count++)
 	{
-		if (i[count] < 96 && i[count] > 123)
+		if (i[count] > 96 && i[count] < 123)
 		{
 			aux = i[count];
 			aux = aux - 32;
