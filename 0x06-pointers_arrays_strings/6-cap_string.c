@@ -1,3 +1,10 @@
+#include "holberton.h"
+
+/**
+ * cap_string - change lowercase for uppercase.
+ *@n: char pointer
+ *Return: always n
+ */
 char *cap_string(char *n)
 {
 	int a, b, aux = 1;
