@@ -1,10 +1,12 @@
 #include "holberton.h"
 /**
- *_sqrt_recursion - find character in c
+ * _sqrt_recursion - find character in c
  * @n : Variable that is parameter in the function.
  * Return: Always pointer.
  */
-int _sqrt_recursion(int n);
+int square_root(int cnt, int n);
+
+int _sqrt_recursion(int n)
 {
 	int cnt = 1;
 
