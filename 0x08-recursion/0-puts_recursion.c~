@@ -1,0 +1,22 @@
+#include "holberton.h"
+/**
+ * *_strstr - find character in c
+ *
+ * @haystack : Pointer that is parameter in the function.
+ * @needle : Date to search
+ * Return: Always pointer.
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	int cnt;
+	int cnt2;
+
+	while (needle[cnt] != '\0' )
+	{
+		cnt++;
+	}
+
+	for(cnt2 = 0; haystack[cnt2] == needle[cnt]; cnt2++)
+		return (haystack);
+	return (0);
+}
