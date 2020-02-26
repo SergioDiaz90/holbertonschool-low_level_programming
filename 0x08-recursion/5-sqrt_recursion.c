@@ -2,6 +2,7 @@
 /**
  * _sqrt_recursion - find character in c
  * @n : Variable that is parameter in the function.
+ * @cnt : other variable.
  * Return: Always pointer.
  */
 int square_root(int cnt, int n);
