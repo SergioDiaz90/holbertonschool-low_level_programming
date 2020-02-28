@@ -1,0 +1,1 @@
+This project is for learn use of arguments for function main ARGC and ARGV
