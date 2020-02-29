@@ -8,7 +8,7 @@
  * Return: Always pointer.
  */
 
-int main (int argc ,char *argv[])
+int main(int argc, char *argv[])
 {
 	int rta;
 
