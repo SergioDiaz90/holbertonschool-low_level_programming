@@ -1,14 +1,14 @@
 #include <stdio.h>
-
+#include <stdlin.h>
 /**
  * main - function general.
  *
  * @argc : Number of arguments for the function.
  * @argv : Array unidimentional of strings
- * Return: Always pointer.
+ * Return: Always int.
  */
 
-int main (int argc,char *argv[] __attribute__((unused)))
+int main(int argc, char **argv __attribute__((unused)))
 {
 	int count;
 
