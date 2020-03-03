@@ -14,23 +14,25 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned int cnt;
 
+	char *ctr;
+
 	if (size == 0)
 	{
 		return (NULL);
 	}
 	else
 	{
-		char *ctr = malloc(sizeof(char) * size);
+		ctr = malloc(sizeof(char) * size);
 
 		if (ctr == '\0')
 		{
-			return ('\0');
+			return (NULL);
 		}
 		else
 		{
 			for (cnt = 0; cnt < size; cnt++)
 				ctr[cnt] = c;
-			return (ctr);
 		}
 	}
+	return (ctr);
 }
