@@ -23,11 +23,10 @@ char *_strdup(char *str)
 
 		ptn = malloc(sizeof(char) * (cnt + 1));
 
-		for (cnt2 = 0; str[cnt2] != '\0'; cnt2++)
+		for (cnt2 = 0; cnt2 < cnt; cnt2++)
 		{
 			ptn[cnt2] = str[cnt2];
 		}
-		ptn[cnt2] = '\0';
 	}
 	else
 	{
