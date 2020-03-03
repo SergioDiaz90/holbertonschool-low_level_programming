@@ -5,10 +5,10 @@
  *
  * @argc : Number of arguments for the function.
  * @argv : Array unidimentional of strings
- * Return: Always pointer.
+ * Return: Int.
  */
 
-int main (int argc __attribute__((unused)) ,char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	int count;
 

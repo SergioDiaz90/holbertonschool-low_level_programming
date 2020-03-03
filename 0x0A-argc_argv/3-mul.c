@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - function general.
  *
@@ -7,20 +7,14 @@
  * @argv : Array unidimentional of strings
  * Return: Always pointer.
  */
-
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char **argv)
 {
-	int rta;
-
-	if (argc != 3)
+	if (argv[2] == '\0' || argv[1] == '\0')
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		rta = atoi(argv[1]) * atoi(argv[2]);
-		printf("d\n", rta);
-		return (0);
-	}
+
+	printf("%i\n", ((atoi(argv[1])) * (atoi(argv[2]))));
+	return (0);
 }
