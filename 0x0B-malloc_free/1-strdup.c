@@ -16,21 +16,23 @@ char *_strdup(char *str)
 	int cnt2;
 	int aux = sizeof(str);
 
-	if (str != NULL)
+	if (str == NULL)
 	{
 
-		for (cnt = 0; cnt <= aux; cnt++)
-
-		ptn = malloc(sizeof(char) * (cnt + 1));
-
-		for (cnt2 = 0; cnt2 < cnt; cnt2++)
-		{
-			ptn[cnt2] = str[cnt2];
-		}
+		return (NULL);
 	}
 	else
 	{
-		return (NULL);
+		for (cnt = 0; cnt <= aux; cnt++)
+		{
+		}
+
+		ptn = malloc(sizeof(char) * (cnt + 1));
+
+		for (cnt2 = 0; cnt2 <= cnt; cnt2++)
+		{
+			ptn[cnt2] = str[cnt2];
+		}
 	}
 	return (ptn);
 }
