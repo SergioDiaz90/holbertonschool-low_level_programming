@@ -1,0 +1,5 @@
+#ifndef LIBHOLBERTON
+#define LIBHOLBERTON
+#define PI 3.14159265359
+
+#endif
