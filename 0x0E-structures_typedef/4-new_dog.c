@@ -1,17 +1,16 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * *new_dog - structure copy new structure.
+ * *new_dog - structure.
  * @name: array of character pointers
  * @age: array of character pointers
  * @owner: array of character pointers
  * Return: dog_n.
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog_n;
-	int cnt, cnt2, cp;
+	int i, j, cp;
 	char *new_name, *new_owner;
 
 	dog_n = malloc(sizeof(dog_t));
@@ -19,18 +18,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog_n == NULL)
 		return (NULL);
 
-	for (cnt = 0; name[cnt] != '\0';  cnt++)
+	for (i = 0; name[i] != '\0'; i++)
 		;
-	for (cnt2 = 0; owner[cnt2] != '\0'; cnt2++)
+	for (j = 0; owner[j] != '\0'; j++)
 		;
-	new_name = malloc(sizeof(char) * cnt + 1);
+	new_name = malloc(sizeof(char) * i + 1);
 
 	if (new_name == NULL)
 	{
 		free(dog_n);
 		return (NULL);
 	}
-	new_owner = malloc(sizeof(char) * cnt2 + 1);
+	new_owner = malloc(sizeof(char) * j + 1);
 
 	if (new_owner == NULL)
 	{
@@ -39,14 +38,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog_n);
 		return (NULL);
 	}
-	for (cp = 0; cp <= cnt; cp++)
+	for (cp = 0; cp <= i; cp++)
 		new_name[cp] = name[cp];
-	for (cp = 0; cp <= cnt2; cp++)
+	for (cp = 0; cp <= j; cp++)
 		new_owner[cp] = owner[cp];
 
-	(*dog_n).name = new_name;
-	(*dog_n).age = age;
-	(*dog_n).owner = new_owner;
+	dog_n->name = new_name;
+	dog_n->age = age;
+	dog_n->owner = new_owner;
 
 	return (dog_n);
 
