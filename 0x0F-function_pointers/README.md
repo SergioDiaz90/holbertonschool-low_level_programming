@@ -1,0 +1,1 @@
+This project is for learn the use of pointer to functions.
