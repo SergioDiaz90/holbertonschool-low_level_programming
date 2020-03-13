@@ -1,5 +1,5 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
 /**
  * get_up_func - function for selection operation.
  * @s: pointer char.
