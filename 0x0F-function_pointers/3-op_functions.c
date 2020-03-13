@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stddef.h>
-#include <stdio.h>
 
 /**
  * op_add - function for plus two integree.
