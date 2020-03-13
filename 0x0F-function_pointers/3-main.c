@@ -1,9 +1,10 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * get_up_func - function for selection operation.
- * @s: pointer char.
- *
+ * main - function for calc.
+ * @argc: Number arguments.
+ * @argv: Array elements.
  * Return: integree.
  */
 
