@@ -4,7 +4,7 @@
  * *get_up_func - function for selection operation.
  * @s: pointer char.
  *
- * Return: integree.
+ * Return: NULL.
  */
 
 int (*get_op_func(char *s))(int, int)
