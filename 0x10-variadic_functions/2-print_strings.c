@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
 /**
- * *sum_them_all - plus of parameters n.
+ * print_strings - print strings.
  * @n: number of arguments.
- *
- * Return: result plus all arguments.
+ * @separator: is colon.
+ * Return: result plus strings.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -23,8 +23,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("%s", va_arg(data, char*));
 
 		if (i != (n - 1))
-                        if(separator != NULL)
-                                printf("%s", separator);
+			if (separator != NULL)
+				printf("%s", separator);
 	}
 	printf("\n");
 }
