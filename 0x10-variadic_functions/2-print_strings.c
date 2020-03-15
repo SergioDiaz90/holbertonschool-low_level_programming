@@ -9,9 +9,9 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-        va_list data;
-        unsigned int i = 0;
-        char *str;
+	va_list data;
+	unsigned int i = 0;
+	char *str;
 
 	if (separator == NULL)
 		return;
@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (str == NULL)
 			printf("(nil)");
 
-		printf("%s", va_arg(data, char*));
+		printf("%s", str);
 
 		if (i < n - 1)
 			printf("%s", separator);
