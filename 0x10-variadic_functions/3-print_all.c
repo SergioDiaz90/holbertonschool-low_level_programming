@@ -46,7 +46,12 @@ void op_flo(va_list f)
 
 void op_ptr(va_list s)
 {
-	printf("%s", va_arg(s, char*));
+	char *str;
+
+	str = va_arg(s, char *);
+	if (str == NULL)
+		str = "(nil)";
+	printf("%s", str);
 }
 
 /**
