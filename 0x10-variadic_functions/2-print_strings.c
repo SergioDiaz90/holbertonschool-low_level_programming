@@ -9,17 +9,20 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list data;
-	unsigned int i;
+        va_list data;
+        unsigned int i = 0;
+        char *str;
 
 	if (separator == NULL)
 		return;
 
 	va_start(data, n);
 
-	for (i = 0; i < n; i++)
+	for (; i < n; i++)
 	{
-		if (data == NULL)
+		str = va_arg(data, char*);
+
+		if (str == NULL)
 			printf("(nil)");
 
 		printf("%s", va_arg(data, char*));
