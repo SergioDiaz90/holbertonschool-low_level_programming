@@ -8,20 +8,20 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-        va_list date;
-        unsigned int i;
-        int  sum = 0;
+	va_list date;
+	unsigned int i;
+	int  sum = 0;
 
-        if (n == 0)
+	if (n == 0)
 	{
-                return (0);
+		return (0);
 	}
 
-        va_start(date, n);
-        for (i = 0; i < n; i++)
+	va_start(date, n);
+	for (i = 0; i < n; i++)
 	{
-                sum = sum + va_arg(date, int);
+		sum = sum + va_arg(date, int);
 	}
-        va_end(date);
-        return (sum);
+	va_end(date);
+	return (sum);
 }
