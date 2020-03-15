@@ -20,7 +20,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(date, n);
 	for (i = 0; i < n; i++)
 	{
-		sum = sum + va_arg(date, int);
+		sum = sum + va_arg(date, unsigned int);
 	}
 
 	va_end(date);
