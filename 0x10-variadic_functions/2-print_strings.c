@@ -6,7 +6,6 @@
  * @separator: is colon.
  * Return: result plus strings.
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list data;
@@ -18,17 +17,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(data, n);
 
-	for (; i < n; i++)
+	while (i < n)
 	{
-		str = va_arg(data, char*);
+		str = va_arg(data, char *);
 
 		if (str == NULL)
+		{
 			printf("(nil)");
-
+		}
 		printf("%s", str);
-
 		if (i < n - 1)
+		{
 			printf("%s", separator);
+		}
+		i++;
 	}
 	printf("\n");
 	va_end(data);
