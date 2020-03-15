@@ -22,6 +22,7 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		sum = sum + va_arg(date, int);
 	}
-	va_end(date);
+
 	return (sum);
+	va_end(date);
 }
