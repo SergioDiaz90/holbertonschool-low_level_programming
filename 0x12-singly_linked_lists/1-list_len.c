@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
- * printf_list - print arguments in the list.
+ * list_len - print arguments in the list.
  * @h: pointer at node.
  * Return: lenght of list-linked.
  */
-size_t printf_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	size_t size = 0;
 
