@@ -4,7 +4,7 @@
  * @h: pointer of list.
  * Return: lenght of list.
  */
-size_t printf_list(const list_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t size = 0;
 
