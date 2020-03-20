@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * printf_list - lenght link list.
+ * print_list - lenght link list.
  * @h: pointer of list.
  * Return: lenght of list.
  */
