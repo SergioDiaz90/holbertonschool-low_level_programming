@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * pop_listint - delete principal node.
+ * get_nodeint_at_index - print node of index.
  * @head: pointer of list.
- * Return: data node deleted.
+ * @index: number of index.
+ * Return: data node of index.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
