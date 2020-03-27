@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * set_bit - settings bit and index in 1.
+ * clear_bit - settings bit and index in 0.
  * @n: number.
  * @index: lenght of number.
  * Return: succesful or failed.
