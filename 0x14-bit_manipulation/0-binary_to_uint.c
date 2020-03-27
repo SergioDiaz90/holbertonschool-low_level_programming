@@ -8,20 +8,19 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int exp = 1, rta;
 	int size = 0;
-	char *aux = b;
 
-	if (!aux)
+	if (!b)
 		return (0);
-	while (aux[size])
+	while (b[size])
 	{
 		size++;
 	}
 	size -= 1;
 	for (rta = 0, exp; size >= 0; size--, exp *= 2)
 	{
-		if (aux[size] != '0' && aux[size] != '1')
+		if (b[size] != '0' && b[size] != '1')
 			return (0);
-		if (aux[size] == '1')
+		if (b[size] == '1')
 			rta += exp;
 	}
 	return (rta);
