@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * clear_bit - settings bit and index in 0.
+ * flip_bits - settings bit and index in 0.
  * @n: number.
- * @index: lenght of number.
- * Return: succesful or failed.
+ * @m: lenght of number.
+ * Return: rta.
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
