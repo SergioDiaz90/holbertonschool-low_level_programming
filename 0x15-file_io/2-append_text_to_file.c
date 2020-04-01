@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * create_file - create and write in new document.
+ * append_text_to_file - add text in the end the file.
  * @filename: pointer an text file.
  * @text_content: number characters.
- * Return: document create.
+ * Return: 1.
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
