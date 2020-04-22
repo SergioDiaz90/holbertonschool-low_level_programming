@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  *main - print string
@@ -8,11 +8,6 @@
 
 int main(void)
 {
-	char str[59] = "and that piece of art ls useful\" - Dora Korpar, 2015-10-19\n";
-	int cnt;
-
-	for (cnt = 0; cnt < 59; cnt++)
-		putchar(str[cnt]);
-
+	write(1, "and that piece of art ls useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
