@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int cnt = '0', cnt2;
+	int cnt, cnt2;
 
-	for (cnt; cnt <= '8'; cnt++)
+	for (cnt = '0'; cnt <= '8'; cnt++)
 	{
 		for (cnt2 = cnt + 1; cnt2 <= '9'; cnt2++)
 		{
@@ -18,8 +18,8 @@ int main(void)
 				putchar(cnt2);
 				if (cnt != '8' || cnt2 != '9')
 				{
-					putchar(' ');
 					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
