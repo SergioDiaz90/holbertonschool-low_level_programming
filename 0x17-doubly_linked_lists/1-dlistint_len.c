@@ -12,7 +12,7 @@ size_t dlistint_len(const dlistint_t *h)
 
     if (!h)
         return (0);
-    while (h->next)
+    while (h)
     {
         h = h->next;
         num_node += 1;
