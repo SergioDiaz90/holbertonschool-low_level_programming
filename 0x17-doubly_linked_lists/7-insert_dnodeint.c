@@ -8,14 +8,12 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-    dlistint_t *new_node = NULL, *copy = NULL;
+    dlistint_t *new_node = NULL, *copy = *h;
     unsigned int cnt_list = 0;
 
-    copy = *h;
     if (idx == 0)
     {
-        copy = add_dnodeint(h, n);
-        return (copy);
+        return (add_dnodeint(h, n));
     }
     if (!copy || n < 0)
         return (NULL);
