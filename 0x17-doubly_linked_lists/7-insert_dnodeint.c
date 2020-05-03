@@ -29,7 +29,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
             new_node->next = copy;
             copy->prev = new_node;
             new_node->prev->next = new_node;
-            return (copy);
+            return (new_node);
         }
         if (!copy->next && idx == cnt_list + 1)
             return (free(new_node), add_dnodeint_end(h, n));
