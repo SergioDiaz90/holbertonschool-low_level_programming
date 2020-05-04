@@ -8,44 +8,44 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *copy = *head, *tmp = NULL;
-	unsigned int cnt_nde = 0;
+	dlistint_t *tmp, *next, *prev;
+	unsigned int c;
 
 	if (*head == NULL)
 		return (-1);
-	while (copy && cnt_nde <= index)
+
+	for (tmp = *head, c = 0, prev = NULL; tmp && c < index; c++)
 	{
-		if (index < 1)
-		{
-			if (cnt_nde < 1 && copy->next == NULL)
-			{
-				copy->next = NULL;
-				copy->prev = NULL;
-				*head = NULL;
-				return (free(copy), 1);
-			}
-			tmp = copy;
-			copy = copy->next;
-			tmp->next = NULL;
-			copy->prev = NULL;
-			*head = copy;
-			return (free(tmp), 1);
-		}
-		if (cnt_nde == index)
-		{
-			tmp = copy;
-			copy = copy->next;
-			copy->prev = copy->prev->prev;
-			copy = copy->prev;
-			copy->next = copy->next->next;
-			tmp->prev = NULL;
-			tmp->next = NULL;
-			free(tmp);
-			return (1);
-		}
-		if (copy == NULL)
-			return (-1);
-		copy = copy->next, cnt_nde++;
+		prev = tmp;
+		tmp = tmp->next;
 	}
-	return (-1);
+
+	if (tmp == NULL)
+		return (-1);
+
+	next = tmp->next;
+	if (prev == NULL)
+	{
+		free(tmp);
+		if (next != NULL)
+		{
+			next->prev = NULL;
+			*head = next;
+		}
+		else
+			*head = NULL;
+	}
+	else if (next == NULL)
+	{
+		prev->next = NULL;
+		free(tmp);
+	}
+	else
+	{
+		prev->next = next;
+		next->prev = prev;
+		free(tmp);
+	}
+
+	return (1);
 }
