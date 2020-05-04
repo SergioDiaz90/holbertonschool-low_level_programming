@@ -22,16 +22,14 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 				copy->next = NULL;
 				copy->prev = NULL;
 				*head = NULL;
-				free(copy);
-				return (1);
+				return (free(copy), 1);
 			}
 			tmp = copy;
 			copy = copy->next;
 			tmp->next = NULL;
 			copy->prev = NULL;
 			*head = copy;
-			free(tmp);
-			return (1);
+			return (free(tmp), 1);
 		}
 		if (cnt_nde == index)
 		{
@@ -45,6 +43,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			free(tmp);
 			return (1);
 		}
+		if (copy == NULL)
+			return (-1);
 		copy = copy->next, cnt_nde++;
 	}
 	return (-1);
