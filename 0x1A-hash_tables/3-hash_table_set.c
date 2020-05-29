@@ -21,11 +21,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	while (pos)
 	{
-		if(!strcmp(key, pos->key))
+		if (!strcmp(key, pos->key))
 		{
 			free(pos->value);
 			pos->value = strdup(value);
-			return(1);
+			return (1);
 		}
 		pos = pos->next;
 	}
