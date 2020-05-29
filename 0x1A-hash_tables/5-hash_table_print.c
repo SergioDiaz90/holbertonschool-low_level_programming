@@ -19,9 +19,8 @@ void hash_table_print(const hash_table_t *ht)
 		tmp = ht->array[cnt];
 		while (tmp)
 		{
-			if (cnt2 > 0)
+			if (cnt2++ > 0)
 				printf(", ");
-			cnt2++;
 			printf("'%s':'%s'", tmp->key, tmp->value);
 			tmp = tmp->next;
 		}
