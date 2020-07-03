@@ -9,5 +9,5 @@ OBJ = $(SRC:%.c = %.o)
 .PHONY: all
 
 all: $(OBJ)
-		$(CC) m.h -o $(NAME) $?
+		$(CC) $(OBJ) m.h -o $(NAME)
 
