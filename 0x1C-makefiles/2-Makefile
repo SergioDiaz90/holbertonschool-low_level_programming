@@ -1,7 +1,13 @@
+#############################
+
 CC = gcc
 SRC = main.c holberton.c
 NAME = holberton
 OBJ = $(SRC:%.c=%.o)
 
+#############################
+.PHONY: all
+
 all: $(OBJ)
 		$(CC) $(OBJ) -o $(NAME)
+
