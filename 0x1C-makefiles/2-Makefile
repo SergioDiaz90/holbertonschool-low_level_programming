@@ -13,6 +13,3 @@ all: $(exe)
 
 program: $(OBJ)
 		$(CC) $(OBJ) m.h -o $(NAME)
-
-%.o: $(SRC)
-		$(CC) $(SRC) -c -o $(OBJ)
