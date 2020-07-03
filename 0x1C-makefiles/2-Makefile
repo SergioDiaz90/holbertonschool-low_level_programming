@@ -1,0 +1,22 @@
+#############################
+
+CC = gcc
+exe = program
+SRC = main.c holberton.c
+NAME = holberton
+OBJ = main.o holberton.o
+
+#############################
+.PHONY: all
+
+all: $(exe)
+
+program: $(OBJ)
+		$(CC) $(SRC) m.h -o $(NAME)
+
+main.o: main.c
+		gcc -c -o main.o main.c
+
+holberton.o: holberton.c
+		gcc -c -o holberton.o holberton.c
+
