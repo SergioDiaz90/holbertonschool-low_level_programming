@@ -1,0 +1,14 @@
+#############################
+
+cc = gcc
+exe = program
+SRC = main.c holberton.c
+name = holberton
+
+#############################
+.PHONY: all
+
+all: $(exe)
+
+program: holberton.c main.c m.h
+		$(cc) $(SRC) m.h -o $(name)
