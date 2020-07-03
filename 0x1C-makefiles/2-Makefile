@@ -4,7 +4,7 @@ CC = gcc
 exe = program
 SRC = main.c holberton.c
 NAME = holberton
-OBJ = main.o holberton.o
+OBJ = $(SRC:%.c = %.o)
 
 #############################
 .PHONY: all
@@ -12,7 +12,7 @@ OBJ = main.o holberton.o
 all: $(exe)
 
 program: $(OBJ)
-		$(CC) $(SRC) m.h -o $(NAME)
+		$(CC) $(OBJ) m.h -o $(NAME)
 
-OBJ: $(SRC)
-		$(CC) -c -o $(OBJ)
+%.o: $(SRC)
+		$(CC) $(SRC) -c -o $(OBJ)
