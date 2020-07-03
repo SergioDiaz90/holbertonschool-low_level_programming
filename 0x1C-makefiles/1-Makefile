@@ -1,6 +1,6 @@
 #############################
 
-cc = gcc
+CC = gcc
 exe = program
 SRC = main.c holberton.c
 name = holberton
@@ -11,4 +11,4 @@ name = holberton
 all: $(exe)
 
 program: holberton.c main.c m.h
-		$(cc) $(SRC) m.h -o $(name)
+		$(CC) $(SRC) m.h -o $(name)
