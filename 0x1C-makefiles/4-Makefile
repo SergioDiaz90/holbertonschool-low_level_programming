@@ -11,7 +11,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 .PHONY: all
 
 all: $(OBJ)
-		$(CC) $(OBJ) $(CFLAGS) $(NAME)
+		$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean:
 		$(RM) *~ $(NAME)
