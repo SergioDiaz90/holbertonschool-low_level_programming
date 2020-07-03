@@ -6,8 +6,6 @@ NAME = holberton
 OBJ = $(SRC:%.c = %.o)
 
 #############################
-.PHONY: all
-
 all: $(OBJ)
 		$(CC) $(OBJ) -o $(NAME)
 
