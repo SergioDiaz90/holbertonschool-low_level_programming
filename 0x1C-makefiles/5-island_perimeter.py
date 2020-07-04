@@ -14,17 +14,23 @@ def island_perimeter(grid):
         [int]: [plus of the sides multiply x 2]
     """
 
-    add_w = 0
-    add_h = 0
+    total_p = 0
 
-    for cols in grid:
-        for cnt2 in range(len(cols)):
-            if cnt2 < len(cols):
-                if cols[cnt2] == 1 and cols[cnt2 - 1] == 1:
-                    if cols[cnt2 - 2] == 0:
-                        add_w += 2
-                    else:
-                        add_w += 1
-                if cols[cnt2] == 1 and cols[cnt2 - 1] == 0:
-                    add_h += 1
-    return (add_h + add_w) * 2
+    rows = len(grid)
+    if rows:
+        cols = len(grid[0])
+    else:
+        cols = 0
+
+    for i in range(rows):
+        for j in range(cols):
+            if grid[i][j] == 1:
+                if (i - 1) == -1 or grid[i - 1][j] == 0:
+                    total_p += 1
+                if (i + 1) == rows or grid[i + 1][j] == 0:
+                    total_p += 1
+                if (j - 1) == -1 or grid[i][j - 1] == 0:
+                    total_p += 1
+                if (j + 1) == cols or grid[i][j + 1] == 0:
+                    total_p += 1
+    return total_p
