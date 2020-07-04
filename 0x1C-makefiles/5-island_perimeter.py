@@ -1,18 +1,11 @@
 #!/bin/usr/python3
-"""
-    [Function for determined the perimeter of an island in grid]
-"""
+'''
+    Function for determined the perimeter of an island in grid
+'''
 
 
 def island_perimeter(grid):
-    """[Island_perimeter]
-
-    Args:
-        grid ([Matrix]): [matrix of n size]
-
-    Returns:
-        [int]: [plus of the sides multiply x 2]
-    """
+    '''Function for find the perimeter of an island'''
 
     add_w = 0
     add_h = 0
