@@ -16,8 +16,6 @@ def island_perimeter(grid):
 
     if not grid:
         return
-    if len(grid) < 1:
-        return
 
     add_w = 0
     add_h = 0
