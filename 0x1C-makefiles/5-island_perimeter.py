@@ -14,7 +14,7 @@ def island_perimeter(grid):
         [int]: [plus of the sides multiply x 2]
     """
 
-    if not grid:
+    if not grid or type(grid) != list:
         return
 
     add_w = 0
