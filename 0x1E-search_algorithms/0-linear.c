@@ -8,25 +8,24 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-    int *tmp = NULL;
-    size_t cnt = 0;
+	int *tmp = NULL;
+	size_t cnt = 0;
 
-    if (!array)
-        return (-1);
-    
-    tmp = array;
+	if (!array)
+		return (-1);
+	tmp = array;
 
-    while (cnt < size && tmp[cnt] != value)
-    {
-        printf("Value checked array [%d] = [%d]\n", (int)cnt, tmp[cnt]);
-        cnt += 1;
-    }
+	while (cnt < size && tmp[cnt] != value)
+	{
+		printf("Value checked array [%d] = [%d]\n", (int)cnt, tmp[cnt]);
+		cnt += 1;
+	}
 
-    if (tmp[cnt] == value)
-    {
-        printf("Value checked array [%d] = [%d]\n", (int)cnt, tmp[cnt]);
-        return (cnt);
-    }
-    else
-        return (-1);
+	if (tmp[cnt] == value)
+	{
+		printf("Value checked array [%d] = [%d]\n", (int)cnt, tmp[cnt]);
+		return (cnt);
+	}
+	else
+		return (-1);
 }
