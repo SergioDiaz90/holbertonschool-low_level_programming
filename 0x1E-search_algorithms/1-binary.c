@@ -8,54 +8,38 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-    int *tmp = NULL;
-    int first = 0, last = size, middle = 0, aux = 0, cnt = 0;
+	int *tmp = NULL;
+	int first = 0, aux = 0, cnt = 0, last = size;
+	size_t middle = 0;
 
-    if (!array)
-        return (-1);
-    
-    tmp = array;
-
-    while(first <= last)
-    {
-        if (aux == 0)
-        {
-            printf("Searching in array: ");
-            for (cnt = 0; cnt <= last; cnt += 1)
-            {
-                if (cnt != last)
-                    printf("%d, ", cnt);
-                else
-                    printf("%d", cnt);
-            }
-            printf("\n");
-            aux += 1;
-        }
-        else
-        {
-            printf("Searching in array: ");
-            for (cnt = middle; cnt <= last; cnt += 1)
-            {
-                if (cnt != last)
-                    printf("%d, ", cnt);
-                else
-                    printf("%d", cnt);
-            }
-            printf("\n");
-            aux += 1;
-        }
-        
-        middle = first + (last - first) / 2;
-        if (tmp[middle] == value)
-            return (middle);
-        if (tmp[middle] > value)
-        {
-            last = middle - 1;
-        }
-        if (tmp[middle] < value)
-        {
-            first = middle + 1;
-        }
-    }
-    return (-1);
+	if (!array)
+		return (-1);
+	tmp = array;
+	while (first < last)
+	{
+		if (aux == 0)
+		{
+			printf("Searching in array: ");
+			for (cnt = 0; cnt < last; cnt += 1)
+				cnt == (last - 1) ? printf("%d", tmp[cnt]) : printf("%d, ", tmp[cnt]);
+			printf("\n");
+			aux += 1;
+		}
+		else
+		{
+			printf("Searching in array: ");
+			for (cnt = middle; cnt < last; cnt += 1)
+				cnt == (last - 1) ? printf("%d", tmp[cnt]) : printf("%d, ", tmp[cnt]);
+			printf("\n");
+			aux += 1;
+		}
+		middle = first + (last - first) / 2;
+		if (tmp[middle] == value)
+			return (middle);
+		if (tmp[middle] > value)
+			last = middle - 1;
+		if (tmp[middle] < value)
+			first = middle + 1;
+	}
+	return (-1);
 }
