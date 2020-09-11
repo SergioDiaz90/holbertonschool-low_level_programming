@@ -9,7 +9,7 @@ What you should learn from this project:
 ---
 
 ### [0. Django](./dog.h)
-* 
+* This is structure of the project with prototypes of the functions necessary in the project.
 
 
 ### [1. A dog is the only thing on earth that loves you more than you love yourself](./1-init_dog.c)
