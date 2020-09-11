@@ -34,4 +34,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **S3RG1O1994** - [SERGIO1994](https://github.com/S3RG1O1994)
+* **Sergio Diaz** - [SERGIO1994](https://github.com/S3RG1O1994)
