@@ -27,10 +27,6 @@ What you should learn from this project:
 ### [4. _realloc](./100-realloc.c)
 * Write a function that reallocates a memory block using malloc and free
 
-
-### [5. We must accept finite disappointment, but never lose infinite hope](./101-mul.c)
-* Write a program that multiplies two positive numbers.
-
 ---
 
 ## Author
