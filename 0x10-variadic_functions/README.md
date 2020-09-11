@@ -24,10 +24,6 @@ What you should learn from this project:
 ### [3. To be is a to be the value of a variable](./3-print_all.c)
 * Write a function that prints anything.
 
-
-### [4. Real programmers can write assembly code in any language](./100-hello_holberton.asm)
-* Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
-
 ---
 ## Author
 * **Sergio Diaz** - [SERGIO1994](https://github.com/S3RG1O1994)
