@@ -26,10 +26,6 @@ What you should learn from this project:
 ### [2. Speak gently, she can hear](./2-append_text_to_file.c)
 * Write a function that appends text at the end of a file.
 
-
-### [3. cp](./3-cp.c)
-* Write a program that copies the content of a file to another file.
-
 ---
 
 ## Author
